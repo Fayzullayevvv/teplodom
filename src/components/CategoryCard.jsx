@@ -11,7 +11,7 @@ const CategoryCard = () => {
   const isCategoryPage = location.pathname === '/categories'
 
   useEffect(() => {
-    fetch('http://localhost:8080/CategoryCard')
+    fetch('https://teplodom-backend.vercel.app/CategoryCard')
       .then(response => {
         if (!response.ok) {
           throw new Error('Server xatosi!')
